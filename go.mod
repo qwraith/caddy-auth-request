@@ -1,4 +1,4 @@
-module caddy-auth-request
+module github.com/qwraith/caddy-auth-request
 
 go 1.20
 
