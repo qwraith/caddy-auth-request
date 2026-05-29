@@ -14,10 +14,11 @@ func (a *AuthRequest) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	return nil
 }
 
-func (AuthRequest) CaddyModule() caddy.Module {
-    return caddy.Module{
+func (AuthRequest) CaddyModule() caddy.ModuleInfo {
+    return caddy.ModuleInfo{
         ID:  "http.handlers.auth_request",
         New: func() caddy.Module { return new(AuthRequest) },
     }
 }
+
 
